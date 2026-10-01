@@ -1,0 +1,310 @@
+{
+  "n_train_raw": 5591,
+  "n_test": 1397,
+  "n_train": 5589,
+  "n_bands_total": 198,
+  "n_bands_used": 131,
+  "dropped_bands_nm": [
+    427,
+    925,
+    933,
+    943,
+    953,
+    963,
+    973,
+    1104,
+    1114,
+    1124,
+    1134,
+    1144,
+    1155,
+    1165,
+    1326,
+    1336,
+    1346,
+    1356,
+    1366,
+    1377,
+    1387,
+    1397,
+    1407,
+    1417,
+    1427,
+    1437,
+    1447,
+    1457,
+    1467,
+    1477,
+    1488,
+    1498,
+    1508,
+    1770,
+    1780,
+    1790,
+    1800,
+    1810,
+    1820,
+    1831,
+    1841,
+    1851,
+    1861,
+    1871,
+    1881,
+    1891,
+    1901,
+    1911,
+    1921,
+    1931,
+    1942,
+    1952,
+    1962,
+    1972,
+    1982,
+    1992,
+    2002,
+    2012,
+    2022,
+    2032,
+    2042,
+    2052,
+    2355,
+    2365,
+    2375,
+    2385,
+    2395
+  ],
+  "n_duplicates": 2,
+  "sporadic_missing_train": {
+    "X1306": 1,
+    "X1316": 2,
+    "X1760": 1,
+    "X2063": 24,
+    "X2335": 3,
+    "X2345": 17
+  },
+  "sporadic_missing_test": {
+    "X2063": 9,
+    "X2335": 1,
+    "X2345": 2
+  },
+  "valid_ranges_nm": [
+    [
+      437,
+      923
+    ],
+    [
+      983,
+      1094
+    ],
+    [
+      1175,
+      1316
+    ],
+    [
+      1518,
+      1760
+    ],
+    [
+      2063,
+      2345
+    ]
+  ],
+  "reflectance_range": [
+    0.251602623,
+    93.23235177
+  ],
+  "crop_counts": {
+    "corn": 2097,
+    "cotton": 658,
+    "rice": 93,
+    "soybean": 1669,
+    "winter_wheat": 1072
+  },
+  "stage_counts": {
+    "Emerge_VEarly": 1037,
+    "Early_Mid": 982,
+    "Late": 861,
+    "Critical": 1540,
+    "Mature_Senesc": 989,
+    "Harvest": 180
+  },
+  "n_combo_classes": 23,
+  "smallest_combos": {
+    "winter_wheat__Critical": 56,
+    "rice__Early_Mid": 52,
+    "rice__Late": 41,
+    "winter_wheat__Late": 30,
+    "cotton__Harvest": 11
+  },
+  "imbalance_ratio_crop": 22.548387096774192,
+  "imbalance_ratio_combo": 61.36363636363637,
+  "crop_aez": {
+    "corn": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "cotton": [
+      2,
+      5,
+      9
+    ],
+    "rice": [
+      7
+    ],
+    "soybean": [
+      6,
+      9,
+      10
+    ],
+    "winter_wheat": [
+      5,
+      9
+    ]
+  },
+  "crop_month": {
+    "corn": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "cotton": [
+      5,
+      6,
+      7,
+      9,
+      10
+    ],
+    "rice": [
+      8
+    ],
+    "soybean": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "winter_wheat": [
+      5,
+      6,
+      7,
+      9,
+      10
+    ]
+  },
+  "meta_only_lookup_bacc_crop": 0.7238427255521847,
+  "meta_only_lookup_bacc_stage": 0.6502901212970955,
+  "meta_only_lookup_bacc_combo": 0.4521097299533924,
+  "ndvi_median_by_combo": {
+    "Critical": {
+      "corn": 0.654,
+      "cotton": 0.369,
+      "rice": NaN,
+      "soybean": 0.735,
+      "winter_wheat": 0.275
+    },
+    "Early_Mid": {
+      "corn": 0.48,
+      "cotton": 0.101,
+      "rice": 0.759,
+      "soybean": 0.567,
+      "winter_wheat": NaN
+    },
+    "Emerge_VEarly": {
+      "corn": 0.147,
+      "cotton": 0.073,
+      "rice": NaN,
+      "soybean": 0.121,
+      "winter_wheat": 0.113
+    },
+    "Harvest": {
+      "corn": 0.133,
+      "cotton": 0.105,
+      "rice": NaN,
+      "soybean": 0.118,
+      "winter_wheat": NaN
+    },
+    "Late": {
+      "corn": 0.797,
+      "cotton": NaN,
+      "rice": 0.765,
+      "soybean": 0.743,
+      "winter_wheat": 0.678
+    },
+    "Mature_Senesc": {
+      "corn": 0.231,
+      "cotton": 0.189,
+      "rice": NaN,
+      "soybean": 0.249,
+      "winter_wheat": 0.296
+    }
+  },
+  "pca_cumvar": {
+    "1": 0.6251588200158821,
+    "2": 0.9180052352149477,
+    "3": 0.9637206487841065,
+    "5": 0.9840743624958638,
+    "10": 0.9972499578389799,
+    "20": 0.9990135337348596
+  },
+  "median_adjacent_band_corr": 0.998894738986771,
+  "knn_crop_acc_by_stage": {
+    "Emerge_VEarly": 0.7116682738669238,
+    "Early_Mid": 0.7861507128309573,
+    "Late": 0.8977932636469221,
+    "Critical": 0.8694805194805195,
+    "Mature_Senesc": 0.7876643073811931,
+    "Harvest": 0.6277777777777778
+  },
+  "knn_crop_acc_overall_spectra_only": 0.8076578994453391,
+  "outliers_mcd_naive": 2013,
+  "outliers_lof": 39,
+  "outliers_lof_by_combo": {
+    "soybean__Critical": 11,
+    "corn__Emerge_VEarly": 7,
+    "corn__Critical": 4,
+    "cotton__Emerge_VEarly": 3,
+    "soybean__Mature_Senesc": 3,
+    "winter_wheat__Emerge_VEarly": 3,
+    "corn__Late": 2,
+    "soybean__Early_Mid": 2,
+    "corn__Mature_Senesc": 1,
+    "cotton__Early_Mid": 1
+  },
+  "implausible_low_ndvi_vegetative": 33,
+  "implausible_by_combo": {
+    "cotton__Critical": 27,
+    "winter_wheat__Critical": 6
+  },
+  "outliers_union": 72,
+  "adversarial_auc": 0.49569080178840913,
+  "nn_dist_median_train_train": 1.2697316894797819,
+  "nn_dist_median_test_train": 1.281820801386537,
+  "test_share": {
+    "AEZ": {
+      "10": 0.193,
+      "9": 0.196,
+      "6": 0.211,
+      "5": 0.206,
+      "8": 0.207,
+      "7": 0.221,
+      "2": 0.138
+    },
+    "Month": {
+      "9": 0.196,
+      "7": 0.198,
+      "8": 0.205,
+      "6": 0.213,
+      "10": 0.208,
+      "5": 0.185
+    }
+  },
+  "corr_912_915": 0.9977362758719828
+}
